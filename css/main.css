@@ -1,0 +1,45 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header header header header header header header sidenav sidenav"
+  "header header header header header header header header header header sidenav sidenav"  "header header header header header header header header header header sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "content-1 content-1 content-1 content-1 content-1 content-2 content-2 content-2 content-2 content-2 sidenav sidenav"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container div{
+  background-color: rgba(184, 196, 197, 0.973);
+  justify-content: auto;
+  justify-self: auto;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.header{
+    grid-area: header; 
+}
+.content-1{
+    grid-area: content-1; 
+}
+.content-2 {
+    grid-area: content-2;
+}
+.sidenav{
+    grid-area: sidenav; 
+}
+.footer {
+    grid-area: footer;
+}
